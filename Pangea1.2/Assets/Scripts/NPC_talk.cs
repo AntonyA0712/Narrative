@@ -22,7 +22,7 @@ public class NPC_talk : MonoBehaviour
     {
         if(other.CompareTag("PlayerFace"))
         {
-            //Debug.Log("Player is in range");
+            Debug.Log("Player is in range");
 
             if(Input.GetKeyDown(KeyCode.E))
             {

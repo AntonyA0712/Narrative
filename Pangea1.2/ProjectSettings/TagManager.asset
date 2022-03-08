@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerFace
+  - Enemy
+  - Laser
+  - NPC
   layers:
   - Default
   - TransparentFX
