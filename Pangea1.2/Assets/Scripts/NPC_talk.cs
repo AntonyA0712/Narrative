@@ -26,10 +26,12 @@ public class NPC_talk : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.E))
             {
-                //Debug.Log("hi");
                 dialogFlowchart.SetActive(true);
-            }
 
+                //GetComponentInChildren<MeshRenderer>().enabled = false;
+                //foreach (Renderer r in GetComponentsInChildren<MeshRenderer>())
+                    //r.enabled = false;
+            }
         }
     }
 }
