@@ -5,6 +5,8 @@ using UnityEngine;
 public class NPC_talk_auto : MonoBehaviour
 {
     public GameObject dialogFlowchart;
+    public MeshRenderer mesh;
+    public Collider trigger;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class NPC_talk_auto : MonoBehaviour
 
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerFace"))
         {
@@ -29,7 +31,12 @@ public class NPC_talk_auto : MonoBehaviour
     }
     public void CarrotCollected()
     {
-        GetComponentInChildren<MeshRenderer>().enabled = false;
+        
+        
+        GetComponent<Collider>().enabled = false;
+        mesh.enabled = false;
+        trigger.enabled = false;
+        //this.gameObject.SetActive(false);
         Debug.Log("carrot");
     }
 }
