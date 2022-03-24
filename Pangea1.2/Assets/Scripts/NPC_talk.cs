@@ -6,10 +6,12 @@ public class NPC_talk : MonoBehaviour
 {
     public GameObject dialogFlowchart;
 
+    public GameObject icon;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        icon.SetActive(true);
     }
 
     // Update is called once per frame
@@ -28,9 +30,11 @@ public class NPC_talk : MonoBehaviour
             {
                 dialogFlowchart.SetActive(true);
 
+                icon.SetActive(false);
+
                 //GetComponentInChildren<MeshRenderer>().enabled = false;
                 //foreach (Renderer r in GetComponentsInChildren<MeshRenderer>())
-                    //r.enabled = false;
+                //r.enabled = false;
             }
         }
     }
