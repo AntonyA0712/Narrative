@@ -8,7 +8,7 @@ public class fade : MonoBehaviour
     Animator myAnim;
     public GameObject removeObject;
     public GameObject revealObject;
-
+    public GameObject revealObject2;
     void Start()
     {
         myAnim = GetComponent<Animator>();
@@ -31,5 +31,6 @@ public class fade : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         removeObject.SetActive(false);
         revealObject.SetActive(true);
-    }
+        revealObject2.SetActive(true);
+}
 }
