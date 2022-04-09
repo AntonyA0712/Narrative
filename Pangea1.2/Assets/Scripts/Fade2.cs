@@ -21,7 +21,7 @@ public class Fade2 : MonoBehaviour
 
     IEnumerator MovePeople()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0f);
         removeObject.SetActive(false);
         removeObject2.SetActive(false);
         revealObject.SetActive(true);

@@ -5,19 +5,18 @@ using UnityEngine;
 public class fade : MonoBehaviour
 {
     //public GameObject fade_effect;
-    Animator myAnim;
+    //Animator myAnim;
     public GameObject removeObject;
     public GameObject revealObject;
     public GameObject revealObject2;
     void Start()
     {
-        myAnim = GetComponent<Animator>();
+        //myAnim = GetComponent<Animator>();
     }
 
     void PlayFade()
     {
-        //fade_effect.SetActive(true);
-        myAnim.SetTrigger("fade");
+        //myAnim.SetTrigger("fade");
         StartCoroutine(MovePeople());
     }
 
@@ -28,7 +27,7 @@ public class fade : MonoBehaviour
 
     IEnumerator MovePeople()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0f);
         removeObject.SetActive(false);
         revealObject.SetActive(true);
         revealObject2.SetActive(true);
