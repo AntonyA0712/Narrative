@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_StopMovement : MonoBehaviour
 {
+    public GameObject veros;
     MovementScript _movescript;
 
 
@@ -11,6 +12,7 @@ public class Player_StopMovement : MonoBehaviour
     void Start()
     {
         _movescript = GetComponent<MovementScript>();
+
     }
 
     public void StopPlayer()
@@ -21,5 +23,10 @@ public class Player_StopMovement : MonoBehaviour
     public void StartPlayer()
     {
         _movescript.enabled = true;
+    }
+
+    public void HideVeros()
+    {
+        veros.SetActive(false);
     }
 }

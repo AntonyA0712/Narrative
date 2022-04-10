@@ -8,6 +8,8 @@ public class NPC_talk_auto : MonoBehaviour
     public MeshRenderer mesh;
     public Collider trigger;
 
+    public GameObject icon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +32,7 @@ public class NPC_talk_auto : MonoBehaviour
         }
     }
     public void CarrotCollected()
-    {
-        
+    {   
         
         GetComponent<Collider>().enabled = false;
         mesh.enabled = false;
@@ -39,4 +40,14 @@ public class NPC_talk_auto : MonoBehaviour
         //this.gameObject.SetActive(false);
         Debug.Log("carrot");
     }
+
+    public void icon_display()
+    {
+       icon.SetActive(false);
+    }
+
+        
+    
+
+
 }

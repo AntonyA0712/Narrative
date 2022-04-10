@@ -12,6 +12,7 @@ public class night : MonoBehaviour
     public GameObject removeObject2;
     public GameObject removeObject3;
     public GameObject revealObject;
+    public GameObject revealObject2;
 
     void Night_true()
     {
@@ -30,6 +31,7 @@ public class night : MonoBehaviour
         removeObject2.SetActive(false);
         removeObject3.SetActive(false);
         revealObject.SetActive(true);
+        revealObject2.SetActive(false);
     }
 
     void Night_false()
@@ -50,6 +52,7 @@ public class night : MonoBehaviour
         removeObject2.SetActive(false);
         removeObject3.SetActive(false);
         revealObject.SetActive(false);
+        revealObject2.SetActive(true);
 
     }
 }
